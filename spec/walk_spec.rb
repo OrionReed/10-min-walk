@@ -12,8 +12,6 @@ describe Walk do
     expect(subject.walk(["N", "N", "N", "N", "N", "S", "S", "S", "S", "S"])).to(eq(true))
   end
 
- #Alternate testing (EAST/ WEST) 
-
   it 'fails with 3x North 3x South 2x East 2x West' do
     expect(subject.walk(["N", "N", "N", "S", "S", "S", "E", "E", "W", "W"])).to(eq(true))
   end
